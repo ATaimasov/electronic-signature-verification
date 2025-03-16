@@ -1,0 +1,15 @@
+node_modules/
+dist/
+build/
+
+*.log
+.DS_Store
+_site/
+tmp/
+out/
+yarn.lock
+.env
+.obsidian
+# package-lock.json
+
+gulp/version.json

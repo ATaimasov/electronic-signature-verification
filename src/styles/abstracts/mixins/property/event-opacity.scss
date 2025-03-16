@@ -1,0 +1,10 @@
+@use "../../variables/variables" as *;
+
+@mixin event-opacity {
+  transition: opacity $animation-duration $animation;
+
+  &:is(:focus-visible, :hover) {
+    outline: none;
+    opacity: $opacity;
+  }
+}

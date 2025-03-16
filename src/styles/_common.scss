@@ -1,0 +1,9 @@
+@use "./global" as *;
+@use "base/root" as *;
+
+// components for all pages
+@use "components/UI/copyrights";
+@use "components/nav";
+
+// styles for scripts and animations
+@use "base/state";

@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="ru" class="html">
+
+<head>
+  @@include('./components/Head.html', {
+  "title": "Alexander Taimasov",
+  "description": "Alexander Taimasov",
+  "ogImage": "https://avatars.githubusercontent.com/u/136252899",
+  "style-name": "about"
+  })
+</head>
+
+<body class="body smooth-mesh-background">
+  <header class="header">
+    @@include('./components/TheHeader.html', {
+    "class": 'header'
+    })
+  </header>
+  <main class="main">
+    @@include('./components/TheMain.html', {
+    "main": false,
+    "about": true
+    })
+  </main>
+  <footer class="footer">
+    @@include('./components/TheFooter.html', {})
+  </footer>
+  <script src="./js/about.min.js"></script>
+</body>
+
+</html>

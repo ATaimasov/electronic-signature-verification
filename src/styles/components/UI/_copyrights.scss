@@ -1,0 +1,9 @@
+@use "../../global" as *;
+
+.copyrights {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  // to change the logo colour you need to change fill directly in svg file or insert svg file as a separate svg element into html
+}

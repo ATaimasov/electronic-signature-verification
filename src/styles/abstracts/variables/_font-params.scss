@@ -1,0 +1,19 @@
+@use "../functions/values/rem" as *;
+
+$font-size: 16px;
+$font-size--h1: rem(34px);
+$font-size--h2: rem(22px);
+$font-size--h3: rem(24px);
+$font-size--btn: rem(16px);
+
+$line-height: 1.4em;
+$line-height--h1: 1.3em;
+$line-height--h2: 1.3em;
+$line-height--btn: 1.3em;
+
+$font-weight--h1: 700;
+$font-weight--h2: 600;
+$font-weight--btn: 600;
+$font-weight--subtitle: 500;
+
+$font-family: "Montserrat", Arial, sans-serif;
