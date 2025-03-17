@@ -31,7 +31,7 @@
 .verification-item__item {
   display: grid;
   align-items: center;
-  justify-items: center;
+  justify-items: start;
   grid-template-columns: 15% 1fr;
   gap: rem(15px);
   padding: rem(16px);
@@ -45,7 +45,6 @@
 
   @media screen and (min-width: $screen-lg) {
     grid-template-columns: auto 1fr;
-    justify-items: start;
   }
 
   &::before {
@@ -80,6 +79,8 @@
   margin-top: rem(26px);
   padding: rem(10px) rem(15px);
   padding-right: rem(20px);
+  width: 100%;
+  min-height: rem(115px);
   border: 3px solid $color-secondary;
   border-radius: rem(6px);
   opacity: 60%;
