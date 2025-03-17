@@ -1,0 +1,28 @@
+@use "../global" as *;
+
+@use "verification-item" as *;
+
+.section:has(.verification) {
+  padding-top: rem(50px);
+  padding-bottom: rem(50px);
+
+  @media screen and (min-width: $screen-lg) {
+    padding-top: rem(100px);
+    padding-bottom: rem(100px);
+  }
+}
+
+.verification {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  width: 100%;
+  gap: rem(39px);
+
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: repeat(2, 1fr);
+    gap: rem(50px);
+  }
+  @media screen and (min-width: $screen-xl) {
+    gap: rem(78px);
+  }
+}

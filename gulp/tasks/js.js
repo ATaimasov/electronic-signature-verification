@@ -16,7 +16,6 @@ export const js = () => {
         mode: app.isBuild ? "production" : "development",
         entry: {
           main: "./src/scripts/main.js",
-          about: "./src/scripts/about.js",
           // add other pages as needed
         },
         output: {

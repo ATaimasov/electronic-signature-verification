@@ -1,0 +1,108 @@
+@use "../global" as *;
+
+.verification-item {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  justify-items: center;
+  width: 100%;
+}
+
+.verification-item__btn {
+  margin-bottom: rem(36px);
+  padding: rem(15px);
+  text-align: center;
+  width: 100%;
+  color: $color-secondary--btn;
+  background-color: $color-secondary;
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: rem(420px);
+  }
+}
+
+.verification-item__list {
+  display: flex;
+  flex-direction: column;
+  gap: rem(16px);
+  width: 100%;
+}
+
+.verification-item__item {
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 15% 1fr;
+  gap: rem(15px);
+  padding: rem(16px);
+  background-color: $color-bg--item;
+  border-radius: rem(6px);
+
+  @media screen and (min-width: $screen-md) {
+    gap: rem(20px);
+    padding: rem(32px);
+  }
+
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: auto 1fr;
+    justify-items: start;
+  }
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(30px);
+    height: rem(30px);
+    background-image: url(../img/gear.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.verification-item__item--loading {
+  &::before {
+    animation: rotate 5s linear infinite;
+  }
+}
+
+.verification-item__item--success {
+  &::before {
+    background-image: url(../img/success-item.svg);
+  }
+}
+
+.verification-item__output {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: rem(18px);
+  align-items: center;
+  margin-top: rem(26px);
+  padding: rem(10px) rem(15px);
+  padding-right: rem(20px);
+  border: 3px solid $color-secondary;
+  border-radius: rem(6px);
+  opacity: 60%;
+
+  @media screen and (min-width: $screen-lg) {
+    margin-top: rem(52px);
+    padding: rem(20px) rem(30px);
+    padding-right: rem(40px);
+  }
+}
+
+.verification-item__output--success {
+  &::before {
+    content: "";
+    width: rem(36px);
+    height: rem(36px);
+    background-image: url(../img/success-output.svg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.verification-item__output--fail {
+  color: $color-fail;
+}

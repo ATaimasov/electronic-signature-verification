@@ -1,19 +1,27 @@
 @use "../functions/values/rem" as *;
 
-$font-size: 16px;
-$font-size--h1: rem(34px);
-$font-size--h2: rem(22px);
-$font-size--h3: rem(24px);
-$font-size--btn: rem(16px);
+$font-size--root: 16px;
 
-$line-height: 1.4em;
-$line-height--h1: 1.3em;
-$line-height--h2: 1.3em;
-$line-height--btn: 1.3em;
+$font-family: "Inter", Arial, sans-serif;
+$font-size: rem($font-size--root);
+$line-height: 1.48;
 
+$font-family--h1: "Inter", Arial, sans-serif;
+$font-size--h1: rem(36px);
+$line-height--h1: 1;
 $font-weight--h1: 700;
-$font-weight--h2: 600;
-$font-weight--btn: 600;
-$font-weight--subtitle: 500;
 
-$font-family: "Montserrat", Arial, sans-serif;
+$font-family--h2: "Segoe UI", Arial, sans-serif;
+$font-size--h2: rem(24px);
+$line-height--h2: 1.2;
+$font-weight--h2: 700;
+
+$font-family--breadcrumbs: "Inter", Arial, sans-serif;
+$font-size--breadcrumbs: rem(14px);
+$line-height--breadcrumbs: 1.4;
+$font-weight--breadcrumbs: 500;
+
+$font-family--btn: "Inter", Arial, sans-serif;
+$font-size--btn: rem(20px);
+$line-height--btn: 1.48;
+$font-weight--btn: 700;

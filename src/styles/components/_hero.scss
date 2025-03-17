@@ -1,0 +1,31 @@
+@use "../global" as *;
+
+.hero {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10px);
+  padding-right: rem(10px);
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: rem(520px);
+  }
+}
+
+.hero__title {
+  font-size: $font-size--h1;
+  font-weight: $font-weight--h1;
+  line-height: $line-height--h1;
+}
+
+.hero__link {
+  display: flex;
+  align-items: center;
+  gap: rem(8px);
+  margin-top: rem(14px);
+
+  &:hover {
+    .icon__arrow-right {
+      transform: rotate(45deg);
+    }
+  }
+}

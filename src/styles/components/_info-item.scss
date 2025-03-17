@@ -1,0 +1,54 @@
+@use "../global" as *;
+
+.info-item {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20px);
+
+  @media screen and (min-width: $screen-lg) {
+    max-width: rem(391px);
+  }
+
+  @media screen and (min-width: $screen-xxl) {
+    max-width: 30vw;
+  }
+}
+
+.info-item__title {
+  display: flex;
+  align-items: center;
+  gap: rem(12px);
+  color: $color-secondary--text;
+
+  &::before {
+    content: "";
+    display: block;
+    width: rem(24px);
+    height: rem(24px);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+}
+
+.info-item__pencil {
+  &::before {
+    background-image: url(../img/pencil.svg);
+  }
+}
+
+.info-item__data {
+  &::before {
+    background-image: url(../img/data.svg);
+  }
+}
+
+.info-item__gear {
+  &::before {
+    background-image: url(../img/gear.svg);
+  }
+}
+
+.info-item__text {
+  opacity: 40%;
+}

@@ -1,0 +1,22 @@
+<section class="section">
+  <div class="section__container">
+    <ul class="verification">
+      @@include('./_verification-item.html', {
+      "title": "Проверка подписи",
+      "ver1": "Проверка корректности установки плагина",
+      "ver2": "Проверка наличия электронной подписи",
+      "ver3": "Локальная проверка подписи",
+      "ver4": "Проверка подписи на сервере ЭТП",
+      "forth": true
+      })
+      @@include('./_verification-item.html', {
+      "title": "Проверка загрузки и подписи файла ",
+      "ver1": "Локальная проверка подписи файла",
+      "ver2": "Загрузка файла",
+      "ver3": "Проверка подписи на сервере ЭТП",
+      "forth": false
+      })
+    </ul>
+
+  </div>
+</section>

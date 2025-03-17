@@ -1,0 +1,30 @@
+@use "../global" as *;
+
+@use "info-item" as *;
+
+.section:has(.info) {
+  @media screen and (max-width: $screen-lg) {
+    text-align: center;
+    align-items: center;
+
+    & * {
+      align-items: center;
+      justify-items: center;
+    }
+  }
+}
+
+.section__container:has(.info) {
+  gap: rem(38px);
+}
+
+.info {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: rem(32px);
+  width: 100%;
+
+  @media screen and (min-width: $screen-lg) {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

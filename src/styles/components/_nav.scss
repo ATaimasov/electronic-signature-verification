@@ -1,22 +1,10 @@
 @use "../global" as *;
+@use "breadcrumbs" as *;
+@use "hero" as *;
 
 .nav {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-}
-
-.nav__list {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-direction: row;
-  column-gap: 20px;
-}
-
-.nav__item {
-  color: $color--text;
-  font-size: 20px;
-  line-height: 1.3em;
 }
