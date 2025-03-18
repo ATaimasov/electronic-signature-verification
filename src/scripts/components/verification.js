@@ -40,15 +40,14 @@ async function verificationLogic(verification) {
 
       item.classList.add("verification-item__item--loading");
 
-      // Имитируем проверку (1-5 секунд)
+      // Имитация проверки
       const delay = Math.random() * (5000 - 1000) + 1000;
       await new Promise((resolve) => setTimeout(resolve, delay));
 
       item.classList.remove("verification-item__item--loading");
 
-      // Случайный результат
+      // Случайный результат как булево
       const success = Math.random() < 0.9; // 90% - вероятность успеха
-      console.log(success);
 
       if (success) {
         item.classList.add("verification-item__item--success");
